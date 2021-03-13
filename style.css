@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(11, 9, 9, 0.995);
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+h1,
+h3,
+input,
+button,
+.lista {
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  /* color: rgb(193, 23, 193); */
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+#content {
+  width: 20rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  padding: 9px;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+
+  background-color: gray;
+  color: white;
+
+  transition: 200ms;
+}
+
+input:hover {
+  padding: 12px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+button {
+  width: 100%;
+  padding: 9px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+
+  background-color: rgba(227, 11, 11, 0.831);
+  color: white;
+
+  transition: background-color 200ms, padding 200ms;
+}
+
+button:hover {
+  background-color: red;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.lista {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+
+  background-color: rgb(34, 34, 34);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 7px 5px;
+  font-size: 1.15rem;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+li::before {
+  content: "📌";
+  margin-right: 10px;
+}

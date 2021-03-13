@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/1/1560.png">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>LISTA DE TAREFAS</h1>
+        <h3>MARQUE E DESMARQUE SUAS TAREFAS CLICANDO NELAS</h3>
+        
+        <div id="content">
+            <input type="text" onchange="addTarefa(this)" class="task" placeholder="
+            [ENTER] PARA ADICIONAR A TAREFA">
+            <button class="btn">REMOVER TAREFA</button>
+            <div class="lista">
+                <ul></ul>
+            </div>
+        </div>  
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
